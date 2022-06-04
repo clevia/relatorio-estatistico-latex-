@@ -1,0 +1,118 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage[brazil]{babel}
+\usepackage{pifont}
+\usepackage{graphicx}
+
+\begin{document}
+
+\pagenumbering{arabic}
+\tableofcontents	
+\newpage
+
+\backmatter
+\setcounter{chapter}{2}
+\chapter{2 \ \ Análise Exploratória de Dados}
+
+\section{Medidas de Posição}
+
+As medidas de posição, tembém chamada de medidas de tendência central, possuem três formas diferentes para três situações distintas:
+
+\begin{dingautolist}{182}
+
+    \item Média
+    \item  Moda
+    \item  Mediana
+    
+\end{dingautolist}
+
+\subsection{Média}
+Existem dois tipos de média:\footnote{somatório...}
+
+\begin{dinglist}{43}
+\item POPULACIONAL, representada pela letra grega $\mu$
+\item AMOSTRAL, representada por $\bar{x}$
+
+\end{dinglist}
+
+\textbf{1- Média}: (Dados não agrupados) \\
+\\
+Sejam os elementos $x_1, x_2,...,x_n$ de uma amostra, portanto``$n$" valores da variável $X$. A média aritmética da variável aleatória X é definida por, 
+
+$$\bar{x} = \frac{x_1 + x_2 + ... + x_n}{n} = \frac{\sum_{i=1}^n{x_i}}{n}$$
+
+\textbf{Exemplo:} Suponha o conjunto de dados que representa o peso ao nascer de bezerros de raça Nelore: 51,40,46,48,54,56,44,43,55 e 57.Determinar a média aritmética simples deste conjunto de dados
+
+$$\bar{x}= \frac{51+40+46+48+54+56+44+43+55+57}{10} = \frac{494}{10} = 49,4$$
+
+\textbf{2-Média:} (Dados agrupados em uma distribuição de frequência por valores simples)\\
+\\
+
+Usa-se a média aritmética dos valores $x_1,x_2,...,x_n$ ponderados pelas respectivas frequências absolutas: $f_1,f_2,...,f_n.$ Assim 
+
+$$\bar{x}= \frac{x_1 f_1 + x_2 f_2 + ... + x_n f_n}{n} = \frac{\sum_{1=n}^n{x_i f_i}}{n}$$ 
+
+
+\textbf{Exemplo:}
+
+%\caption{Tabela 6: Distribuição do número de alunos em 20 turmas da UFCG}
+
+\begin{table}[h]
+\centering
+    \caption{Cronograma} \\
+
+\begin{tabular}{|l||c|c|c|c|c|c|}
+\hline 
+Fase & Março & Abril & Maio & Junho & Jullho \\
+\hline
+1    & center &       &        &        &      \\
+2    &        & center& center &        &       \\ 
+3    &        &       &center  & center &      \\ 
+4    &        &       &        & center & center \\
+5    &        &       &       &         & center \\
+\hline
+\hline
+
+\end{tabular} 
+
+\end{table}
+
+%\caption{Cronograma} \\
+
+%\begin{tabular}{|l||c|c|c|c|c|c|}
+%\hline 
+%Fase & Março & Abril & Maio & Junho & Jullho \\
+%\hline
+%1    & center &       &        &        &      \\
+%2    &        & center& center &        &       \\ 
+%3    &        &       &center  & center &      \\ 
+%4    &        &       &        & center & center \\
+%5    &        &       &       &         & center \\
+
+%\end{tabular}
+
+\begin{table}[h]
+    \centering
+    \caption{Tabela 6: Distribuição do número de alunos em 20 turmas da UFCG}\\
+    
+    \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+    \hline
+    $i$         & 1   & 2   & 3  & 4   & 5  & 6   & 7   & 8   & 9  & 10  & 11   &   12   & 13  & Total \\ 
+    \hline
+    Dados$(x_i)$ & 41& 42  & 43 & 44  & 45  &46  & 50  & 51  & 52  &54  &57   &  58   &60  & $\sum_{i=1}^{13}{f_i}$ \\
+    \hline
+    $(f_i)$ & 3 & 2 & 1 & 1 & 1 & 2 & 2 & 1 & 1 & 1 & 1 & 2 & 2 & 20 \\ 
+    \hline
+    $x_i f_i$ & 123 & 34 & 43 & 44 & 45 & 92 & 100 & 51 & 52 & 54 & 57 & 116 & 120 & 981 \\ 
+    \hline
+        
+    \end{tabular}
+   
+\end{table}
+
+Portanto:
+
+$$\bar{x}=\frac{981}{20} = 49,05$$
+
+\end{document}
